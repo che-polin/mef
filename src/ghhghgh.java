@@ -67,6 +67,96 @@ public class ghhghgh {
                 System.out.println("делитель: " + delitel);
             }
         }
+
+        int sum = 0;
+        for (int w = 31; w < 100; w++) {
+            if (w % 3 == 0) {
+                int lastCifra = w % 10;
+
+                if (lastCifra == 2 || lastCifra == 4 || lastCifra == 8) {
+                    sum += w;
+                }
+            }
+        }
+        System.out.println(sum);
+
+        //7.13б
+        System.out.print("Введите z: ");
+        int z = scanner.nextInt();
+        int summa = 0;
+        for (int delitel = 1; delitel <= z; delitel++) {
+            if (z % delitel == 0) {
+                summa += delitel;
+            }
+        }
+        System.out.println(summa);
+
+        //7.13в
+        System.out.print("Введите e: ");
+        int e = scanner.nextInt();
+        int summa2 = 0;
+        for (int delitel = 1; delitel <= e; delitel++) {
+            if ((e % delitel == 0) && (delitel % 2 == 0)) {
+                summa2 += delitel;
+            }
+        }
+        System.out.println(summa2);
+
+        //7.13г
+        System.out.print("Введите e: ");
+        int ep = scanner.nextInt();
+        int summa3 = 0;
+        for (int delitel = 1; delitel <= ep; delitel++) {
+            if ((ep % delitel == 0)) {
+                summa3 += 1;
+            }
+        }
+        System.out.println(summa3);
+
+        //7.13д
+        System.out.print("Введите e: ");
+        int es = scanner.nextInt();
+        int summa4 = 0;
+        for (int delitel = 1; delitel <= es; delitel++) {
+            if ((es % delitel == 0) && (delitel % 2 != 1)) {
+                summa4 += 1;
+
+            }
+        }
+        System.out.println(summa4);
+
+
+        //7.13е
+        System.out.print("Введите e: ");
+        int pop = scanner.nextInt();
+        int summa5 = 0;
+        int kolvoChetnihDel = 0;
+        for (int delitel = 1; delitel <= pop; delitel++) {
+            if ((pop % delitel == 0)) {
+                summa5 += 1;
+                if (delitel % 2 == 0) {
+                    kolvoChetnihDel += 1;
+                }
+            }
+        }
+        System.out.println("Кол-во делителей: " + summa5);
+        System.out.println("Кол-во четных делителй: " + kolvoChetnihDel);
+
+        //7.13ж
+        System.out.print("Введите e: ");
+        int ese = scanner.nextInt();
+        System.out.print("Введите d: ");
+        int d = scanner.nextInt();
+        int summa6 = 0;
+        for (int delitel = 1; delitel <= ese; delitel++) {
+            if ((ese % delitel == 0) && (delitel > d)) {
+                summa6 += 1;
+
+            }
+        }
+        System.out.println(summa6);
+
+
     }
 }
 
